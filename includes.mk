@@ -11,6 +11,9 @@ DOCKER_HOST = $(shell echo $$DOCKER_HOST)
 REGISTRY = $(shell if [ "$$DEV_REGISTRY" == "registry.hub.docker.com" ]; then echo; else echo $$DEV_REGISTRY/; fi)
 GIT_SHA = $(shell git rev-parse --short HEAD)
 
+GIT_LAST_HASH = $(shell git rev-list --tags --max-count=1)
+GIT_LAST_TAG = $(shell git describe --tags ${GIT_LAST_HASH})
+
 ifndef IMAGE_PREFIX
   IMAGE_PREFIX = hkloudou/
 endif
