@@ -19,7 +19,7 @@ ifndef IMAGE_PREFIX
 endif
 
 ifndef BUILD_TAG
-  BUILD_TAG = git-$(GIT_SHA)
+  BUILD_TAG = $(GIT_LAST_TAG)
 endif
 
 ifndef S3_BUCKET
