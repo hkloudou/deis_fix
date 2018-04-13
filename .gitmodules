@@ -4,3 +4,6 @@
 [submodule "registry"]
 	path = registry
 	url = https://github.com/hkloudou/deit_registry.git
+[submodule "controller"]
+	path = controller
+	url = https://github.com/hkloudou/deis_controller.git
