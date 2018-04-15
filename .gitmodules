@@ -7,3 +7,6 @@
 [submodule "controller"]
 	path = controller
 	url = https://github.com/hkloudou/deis_controller.git
+[submodule "store"]
+	path = store
+	url = https://github.com/hkloudou/deis_store.git
